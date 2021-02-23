@@ -1,0 +1,76 @@
+.content-form{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.steps-content {
+    margin-top: 16px;
+    border-radius: 6px;
+    max-height: 100%;
+    padding-top: 20px;
+  }
+  
+.steps-action {
+    margin-top: 0px;
+}
+
+/*Form style*/
+
+.auth-input-label{
+    font-weight: 600;
+    color: #4D5AF2;
+}
+.input-event .ant-input{
+    width: 100%;
+    height: 40px;
+    border-color: #4D5AF2;
+    color: #4D5AF2;
+}
+.input-description-event .ant-input{
+    width: 100%;
+    border-color: #4D5AF2;
+    height: 100px;
+}
+
+.form-section-3{
+    width: 90%;
+}
+
+.form-section-4{
+    width: 100%;
+}
+
+.select-kategori .ant-select-selection{
+    margin-top: 4px;
+    /* min-width: 362px; */
+    border-color: #4D5AF2;
+}
+
+.select-kategori .ant-select-selection-selected-value{
+    margin: 4px;
+}
+
+.select-kategori .ant-select-selection--single{
+    height: 40px;
+}
+
+.auth-dropdown-label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4D5AF2;
+}
+
+.form-section-5{
+    width: 95%;
+}
+
+.input-location-event .ant-input{
+    width: 97.5%;
+    border-color: #4D5AF2;
+    height: 60px;
+}
+
+.form-section-6{
+    width: 90%;
+}

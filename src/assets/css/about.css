@@ -1,0 +1,86 @@
+.section-picture{
+    /* background-color: red; */
+    min-height: 550px;
+    margin-top: 50px;
+    background-image: url("../images/event.jpg");
+}
+.text-description{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    /* background-color: green; */
+    font-weight: 600;
+    height: 100%;
+    max-width: 800px;
+    padding: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-text{
+    margin-top: 70px;
+}
+
+.text-section-2-bout{
+    max-width: 90%;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.text-description-section-2-about{
+    /* background-color: red; */
+    font-size: 15px;
+    max-width: 90%;
+    float: right;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.picture-section-3{
+    /* background-color: red; */
+    min-height: 470px;
+}
+
+.text-section-4{
+    min-height: 470px;
+}
+.title-section-4-about{
+    /* background-color: red; */
+    padding: 22px;
+    font-size: 27px;
+    padding-left: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.title-description-4-about{
+    color: white;
+    padding-left: 40px;
+    font-size: 13px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.title-section-5{
+    /* background-color: red; */
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box-section-5{
+    /* background-color: red; */
+    margin-top: 20px;
+}
+
+.title-box-section-5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description-box-section-5{
+    max-width: 90%;
+    font-weight: 500;
+    font-size: 15px;
+}

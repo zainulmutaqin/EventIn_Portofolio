@@ -1,0 +1,55 @@
+.register-section-container{
+    padding: 40px;
+    padding-bottom: 0px;
+}
+.login-image-container {
+    padding: 60px;
+    padding-bottom: 0px;;
+}
+.auth-register-form-container {
+    padding-top: 45px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.auth-input-label {
+    font-size: 20px;
+}
+.auth-reminder-label{
+    font-size: 15px;
+    text-align: right;
+}
+
+.select-jenis-kelamin .ant-select-selection--single{
+    min-height: 50px !important;
+    background-color: #2C37BA;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    /* padding-left: 38px !important; */
+    color: white;
+}
+
+.select-jenis-kelamin .ant-select-selection-selected-value{
+    margin-top: 10px;
+}
+
+.select-jenis-kelamin .ant-select-arrow{
+    color: white !important;
+}
+.auth-button-login{
+    font-size: 22px;
+    font-weight: 500;
+    min-height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.button-section-1-login {
+    margin-top: 10%;
+    max-width: 400px;
+    margin-left: 13%;
+}
+
