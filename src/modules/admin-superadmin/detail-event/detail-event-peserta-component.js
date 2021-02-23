@@ -69,7 +69,6 @@ class DetailEventComponent extends Component {
                               </div>
                               </Row>
                               <LoadingContainer loading={initialData.loading}>
-                                  <Row gutter={24} type="flex">
                                       <Layout className="landing-container">
                                           <Content style={{ overflow: "hidden" }}>
                                               <Row style={{minHeight: '100%',marginBottom: '2%',marginTop:'2%'}}>
@@ -164,7 +163,6 @@ class DetailEventComponent extends Component {
                                               </Row>
                                           </Content>
                                       </Layout>
-                                  </Row>
                               </LoadingContainer>
                           </div>
                       </Col>
