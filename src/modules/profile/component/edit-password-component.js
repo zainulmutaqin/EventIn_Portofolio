@@ -7,22 +7,22 @@ import '../../../assets/css/dashboard-all/table-style.css'
 import '../../../assets/css/admin-superadmin/detail-event.css'
 // component
 import LoadingContainer from '../../../common/component/loading/loading-container'
-import InputForm from '../../../common/component/input/input-form';
+// import InputForm from '../../../common/component/input/input-form';
 import {  faUserLock, faLock } from '@fortawesome/free-solid-svg-icons';
 import InputFormPassword from '../../../common/component/input/input-form-password';
 // constant content
 const { Content } = Layout;
-const { Option } = Select;
-const uploadButton = (
-    <div>
-      <div className="ant-upload-text">Upload Foto Eventmu</div>
-    </div>
-);
+// const { Option } = Select;
+// const uploadButton = (
+//     <div>
+//       <div className="ant-upload-text">Upload Foto Eventmu</div>
+//     </div>
+// );
 class EditProfilePesertaComponent extends Component {
     render() { 
       const {initialData,handleChange,handleSubmit,onStartLoadingHome,onFinishLoadingHome
       } = this.props  
-      const dateFormat = 'YYYY-MM-DD';
+    //   const dateFormat = 'YYYY-MM-DD';
       return ( 
         <Layout className="landing-container" style={{minHeight: "100vh"}} >
             <Navbar

@@ -159,7 +159,6 @@ class DetailListParticipantbyEventPage extends Component {
             umur : peserta.umur,
             nama_event : event.nama_event,
             email : peserta.users.email,
-            umur : peserta.umur,
             telepon : peserta.telepon
         }))
         

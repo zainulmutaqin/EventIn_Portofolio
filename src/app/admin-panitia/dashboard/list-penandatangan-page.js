@@ -7,7 +7,7 @@ import { API } from '../../../common/api'
 import { navigate } from '../../../common/store/action'
 import ListPenandatanganComponent from '../../../modules/admin-panitia/list-penandatangan/list-penandatangan-component';
 
-const { confirm } = Modal;
+// const { confirm } = Modal;
 
 class ListPenandatanganPage extends Component {
     state = { 

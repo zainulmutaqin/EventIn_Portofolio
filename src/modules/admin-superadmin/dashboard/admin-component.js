@@ -7,7 +7,6 @@ import LoadingContainer from '../../../common/component/loading/loading-containe
 import 'moment-timezone';
 import 'moment/locale/id';
 
-import { Link } from 'react-router-dom';
 // constant content
 const { Content } = Layout;
 const { Option } = Select;

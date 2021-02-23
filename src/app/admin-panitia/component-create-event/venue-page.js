@@ -98,13 +98,10 @@ class VenuePage extends Component {
 
     onNext = () => {
         if(validation.required(this.state.venue) !== null){
-            const message = validation.required(this.state.venue);
             this.openNotification('Harus dipilih', 'Ruangan Harus Dipilih')   
         }else if(validation.required(this.state.id_provinsi) !== null){
-            const message = validation.required(this.state.id_provinsi);
             this.openNotification('Harus dipilih', 'Provinsi Harus Dipilih')
         }else if(validation.required(this.state.id_kabupaten) !== null){
-            const message = validation.required(this.state.id_kabupaten);
             this.openNotification('Harus dipilih', 'Kabupaten Harus Dipilih')
         }else if(validation.required(this.state.lokasi) !== null){
             const message = validation.required(this.state.lokasi);
