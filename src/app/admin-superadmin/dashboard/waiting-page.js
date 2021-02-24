@@ -3,6 +3,7 @@ import { Modal, message, Select,Button, Input, Icon, Tooltip, Divider, Row, Col}
 import { connect } from 'react-redux';
 import { API } from '../../../common/api'
 import { navigate } from '../../../common/store/action'
+import { notification } from 'antd';
 import  * as Highlighter from 'react-highlight-words';
 import { faPaperPlane,faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
@@ -11,10 +12,12 @@ import ButtonDashboard from '../../../common/component/button/button-dashboard';
 import 'moment-timezone';
 import 'moment/locale/id';
 import moment from 'moment-timezone';
+import { NavLink } from 'react-router-dom'
 import ButtonEdit from '../../../common/component/button/button-edit';
 
 // import store
 import { setIdEvent } from '../../../modules/admin-panitia/active-event/store/active-event-action'
+import { Link } from 'react-router-dom';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -28,6 +31,7 @@ class WaitingPage extends Component {
         id_sertifikat:'',
         id_penandatangan : undefined,
         link_sertif : '',
+        view_sertif : (<NavLink to={`/admin/admin-penandatangan`}>Klik Disini</NavLink>),
         start_event: '',
         end_event: '',
         end_regis: '',
@@ -152,6 +156,7 @@ class WaitingPage extends Component {
     }
 
     handleSubmit = (id_penandatangan_sertifikat) => {
+        this.waitingNotification('Harap Menunggu', 'Sertifikat sedang dikirim kurang lebih 1-2 menit')
         this.setState({loading: true})
         const params = new FormData()
         params.append("_method", 'PUT')
@@ -161,6 +166,7 @@ class WaitingPage extends Component {
             if(res.status === 200){
               if(res.data.status === 'Success'){
                 message.success('Berhasil mengirim sertifikat');
+                this.successNotification('Buka halaman Penandatangan > Daftar > Detail', 'untuk melihat sertifikat')
                 this.componentDidMount();    
               }else{
                 message.error(res.data.status);
@@ -197,7 +203,23 @@ class WaitingPage extends Component {
         nama_event : nama_event,
       });
     }
-  
+
+    waitingNotification = (message, description) => {
+      notification.success({
+          message,
+          description,
+          duration: 60,
+      });
+    };
+
+    successNotification = (message, description) => {
+      notification.success({
+          message,
+          description,
+          duration: 0,
+      });
+    };
+
     handleOk = e => {
       this.setState({
         visible: false,
