@@ -166,7 +166,11 @@ class WaitingPage extends Component {
             if(res.status === 200){
               if(res.data.status === 'Success'){
                 message.success('Berhasil mengirim sertifikat');
-                this.successNotification('Buka halaman Penandatangan > Daftar > Detail', 'untuk melihat sertifikat')
+                this.successNotification('Sertifikat dibuat', (
+                  <div>
+                    <a href="/admin/detail-penandatangan">KLIK DISINI</a> lalu pilih tombol <b>detail</b> untuk melihat sertifikat
+                  </div>
+                ),)
                 this.componentDidMount();    
               }else{
                 message.error(res.data.status);
