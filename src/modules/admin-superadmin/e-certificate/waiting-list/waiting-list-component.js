@@ -5,6 +5,7 @@ import '../../../../assets/css/dashboard-all/table-style.css'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import TableProfile from '../../../../common/component/table/table'
 import LoadingContainer from '../../../../common/component/loading/loading-container'
+import LoadingNotifContainer from '../../../../common/component/loading/loading-notif';
 import ButtonEdit from '../../../../common/component/button/button-edit';
 // constant content
 const { Content } = Layout;

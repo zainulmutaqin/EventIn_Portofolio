@@ -168,7 +168,7 @@ class WaitingPage extends Component {
                 message.success('Berhasil mengirim sertifikat');
                 this.successNotification('Sertifikat dibuat', (
                   <div>
-                    <a href="/admin/detail-penandatangan">KLIK DISINI</a> lalu pilih tombol <b>detail</b> untuk melihat sertifikat
+                    <a href="/admin/admin-penandatangan">KLIK DISINI</a> lalu pilih tombol <b>detail</b> untuk melihat sertifikat
                   </div>
                 ),)
                 this.componentDidMount();    
