@@ -68,6 +68,16 @@ class PesertaAdminComponent extends Component {
                             </LoadingContainer>
                         </div>
                     </Col>
+                    <Modal
+                        title="Proses Mengirim Sertifikat"
+                        visible={initialData.show}
+                        className = "modal-notif"
+                        >
+                        <p className="text-notif">Silahkan tunggu kurang lebih 1-2 menit, Sertifikat sedang dibuat dan dikirim ke Penandatangan</p>
+                        <div >
+                            <LoadingNotifContainer loading={initialData.loading_notif} style={{ minHeight:'20px', marginTop:'50px',}}/>
+                        </div>
+                    </Modal>
                 </Row>
             </Content>
         );

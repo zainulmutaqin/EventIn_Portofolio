@@ -48,7 +48,7 @@ class BiodataPenandatanganAdminComponent extends Component {
                         visible={initialData.show}
                         className = "modal-notif"
                         >
-                        <p className="text-notif">Silahkan tunggu pemberitahuan email sedang dikirim</p>
+                        <p className="text-notif">Silahkan tunggu, pemberitahuan email sedang dikirim</p>
                         <div >
                             <LoadingNotifContainer loading={initialData.loading_notif} style={{ minHeight:'20px', marginTop:'50px',}}/>
                         </div>

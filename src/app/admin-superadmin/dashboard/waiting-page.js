@@ -36,6 +36,7 @@ class WaitingPage extends Component {
         end_event: '',
         end_regis: '',
         nama_event: '',
+        show: false,
         loading : false,
         visible : false,
     }
@@ -156,10 +157,10 @@ class WaitingPage extends Component {
     }
 
     handleSubmit = (id_penandatangan_sertifikat) => {
-        this.waitingNotification('Harap Menunggu', 'Sertifikat sedang dikirim kurang lebih 1-2 menit')
         this.setState({loading: true})
         const params = new FormData()
         params.append("_method", 'PUT')
+        this.showModal();
         API.postEdit(`/admin/send-sertifikat/${id_penandatangan_sertifikat}`,params)
         .then(res => {
           // console.log(res)
@@ -171,17 +172,23 @@ class WaitingPage extends Component {
                     <a href="/admin/admin-penandatangan">KLIK DISINI</a> lalu pilih tombol <b>detail</b> untuk melihat sertifikat
                   </div>
                 ),)
-                this.componentDidMount();    
+                this.componentDidMount(); 
+                this.setState({
+                  show :false,
+              })
               }else{
                 message.error(res.data.status);
                 this.setState({loading: false});
+                this.setState({
+                  show :false,
+              })
               }
             }
         });
     }
 
     rejectSertifikat = (id_penandatangan_sertifikat) => {
-        this.setState({loading: true})
+        this.setState({loading: true})    
         API.delete(`/admin/reject-sertifikat/${id_penandatangan_sertifikat}`)
         .then(res => {
             if(res.status === 200){
@@ -196,6 +203,13 @@ class WaitingPage extends Component {
           }
         });
     }
+
+    showModal = () => {
+      this.setState({
+          show :true,
+      })
+    }
+
 
     onDetailSertifikat = (link,end_regis,start_event,end_event,nama_event) => {
       this.setState({
